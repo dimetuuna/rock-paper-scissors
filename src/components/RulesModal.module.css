@@ -1,0 +1,46 @@
+.dialog {
+  border: none;
+  border-radius: 12px;
+  padding: 2rem;
+  max-width: 90vw;
+  width: 400px;
+  background: #fff;
+  color: var(--navy-900, hsl(229, 25%, 31%));
+}
+
+.dialog::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: 2rem;
+  letter-spacing: 0.1em;
+  color: var(--navy-900, hsl(229, 25%, 31%));
+}
+
+.close {
+  padding: 0.25rem;
+  opacity: 0.6;
+  transition: opacity 0.15s ease;
+}
+
+.close:hover {
+  opacity: 1;
+}
+
+.close img {
+  width: 20px;
+  height: 20px;
+}
+
+.rulesImage {
+  width: 100%;
+  height: auto;
+}

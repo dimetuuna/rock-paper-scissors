@@ -1,0 +1,21 @@
+.rulesButton {
+  align-self: flex-end;
+  margin-top: auto;
+  padding: 0.6rem 2.4rem;
+  border: 2px solid var(--gray-600, hsl(246, 11%, 37%));
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  font-size: 0.9rem;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.rulesButton:hover {
+  background: #fff;
+  color: var(--navy-900, hsl(229, 25%, 31%));
+}
+
+.app {
+  /* ensure rules button placement */
+}

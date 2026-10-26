@@ -1,0 +1,44 @@
+.board {
+  position: relative;
+  width: 300px;
+  height: 280px;
+  margin: 1rem auto 0;
+}
+
+.triangle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 72%;
+  height: auto;
+  pointer-events: none;
+  opacity: 0.95;
+}
+
+.slot {
+  position: absolute;
+}
+
+.scissors {
+  top: 0;
+  left: 0;
+}
+
+.paper {
+  top: 0;
+  right: 0;
+}
+
+.rock {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (max-width: 480px) {
+  .board {
+    width: 260px;
+    height: 240px;
+  }
+}

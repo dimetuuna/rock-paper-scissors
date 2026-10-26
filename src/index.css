@@ -1,0 +1,88 @@
+:root {
+  --gold-500: hsl(39, 89%, 49%);
+  --gold-600: hsl(28, 76%, 44%);
+  --blue-500: hsl(230, 89%, 62%);
+  --blue-700: hsl(229, 64%, 46%);
+  --red-600: hsl(349, 71%, 52%);
+  --red-800: hsl(347, 75%, 35%);
+  --purple-600: hsl(261, 73%, 60%);
+  --purple-700: hsl(261, 51%, 44%);
+  --lightblue-400: hsl(189, 59%, 53%);
+  --lightblue-500: hsl(194, 58%, 42%);
+
+  --navy-900: hsl(229, 25%, 31%);
+  --gray-600: hsl(246, 11%, 37%);
+
+  --bg-from: hsl(214, 47%, 23%);
+  --bg-to: hsl(237, 48%, 15%);
+
+  --font: 'Barlow Semi Condensed', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  font-family: var(--font);
+  background: radial-gradient(circle at top, var(--bg-from), var(--bg-to));
+  color: #fff;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+button:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 3px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1.25rem 3rem;
+  gap: 3rem;
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (min-width: 768px) {
+  .app {
+    padding: 3rem 2rem 4rem;
+  }
+}
